@@ -1,0 +1,23 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: >
+  sam-csb-layers
+
+  SAM Template for Layers used in the bathymetry project
+
+Resources:
+  H3Layer:
+    Type: AWS::Serverless::LayerVersion
+    Properties:
+      LayerName: H3Layer
+      ContentUri: ./h3_layer/
+      CompatibleRuntimes:
+        - python3.12
+        - python3.11
+    Metadata:
+      BuildMethod: python3.11
+
+Outputs:
+  H3Layer:
+    Description: "H3 Layer ARN"
+    Value: !Ref H3Layer
