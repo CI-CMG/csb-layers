@@ -2,11 +2,21 @@
 
 [function_build_definitions]
 
-[layer_build_definitions.3d58c125-522a-4476-b88d-afd5ed5bd83b]
+[layer_build_definitions]
+[layer_build_definitions.caa1a264-abe5-4732-93c2-257634bc2d50]
 layer_name = "H3Layer"
 codeuri = "/Users/jcc/projects/sam-csb-layers/h3_layer"
-build_method = "python3.11"
+build_method = "python3.12"
 compatible_runtimes = ["python3.12", "python3.11"]
 architecture = "x86_64"
 manifest_hash = "6f207f8b5dfe1eebac63467930df5189"
 layer = "H3Layer"
+
+[layer_build_definitions.8b3d4d44-7938-4f64-91d5-365bbae49374]
+layer_name = "GdalLayer"
+codeuri = "/Users/jcc/projects/sam-csb-layers/gdal_layer"
+build_method = "python3.12"
+compatible_runtimes = ["python3.12", "python3.11"]
+architecture = "arm64"
+manifest_hash = "588445ab8e4948394a4606e1d6419881"
+layer = "GdalLayer"
